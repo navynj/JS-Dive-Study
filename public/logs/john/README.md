@@ -1,41 +1,45 @@
-# 🌊 Welcome to My JS Dive Space! 🐋
-## 👤 About Me
-- _**Your Name**_
+# ⬜️ _Pick Your Emoji and Write Your Name Here_
+
+## 📎 About Me
+
 - _**Background**: [A brief description of your background, such as your studies, work, or hobbies.]_
-- _**Fun Fact**: [Share something unique or fun about yourself!]_
+- _**Fun Facts**: [Share something unique or fun about yourself!]_
 
 <br />
 
 ## 🎬 My Motivation
+
 - _Why did I join JS Dive Study?_
-  - _[Describe what inspired you to join this study group. For example: "I want to master closures and prototypes," or "I struggle with async/await and want to get better."]_
-  
+  - _Describe what inspired you to join this study group. For example: "I want to master closures and prototypes," or "I struggle with async/await and want to get better."_
+
   <br />
 
 ## 🔭 My Expectations
+
 - _What do I hope to achieve in this study group?_
-  - _[Outline your learning goals. For example: "Understand JavaScript's quirks," "Get better at writing clean code," or "Collaborate using GitHub."]_
+  - _Outline your learning goals. For example: "Understand JavaScript's quirks," "Get better at writing clean code," or "Collaborate using GitHub."_
 
 <br />
 
 ## 🗓️ Study Progress
-|  **Week** | **Session Topics**             |    **Status**  | **PR Link**            |
-|-----------|--------------------------------|----------------|------------------------|
-|  Week 01  | Values                         | 🛠️ In Progress | # |
-|           | Variables                      | 🕳️ Not Started | # |
-|  Week 02  | Functions                      | 🕳️ Not Started | # |
-|           | Closures                       | 🕳️ Not Started | # |
-|  Week 03  | Objects                        | 🕳️ Not Started | # |
-|           | Prototypes                     | 🕳️ Not Started | # |
-|  Week 04  | Event Loop                     | 🕳️ Not Started | # |
-|           | Promises                       | 🕳️ Not Started | # |
-|           | Async                          | 🕳️ Not Started | # |
 
-*(Mark your progress using ☑️, 🛠️, or 🕳️.)*
+|     | **Chapter** | **Part** | **Topics**       | **Status**     | **PR Link** |
+| --- | ----------- | -------- | ---------------- | -------------- | ----------- |
+| 🐚  | 01          | 1        | Values           | 🛠️ In Progress | #           |
+|     |             | 2        | Variables        | 🕳️ Not Started | #           |
+| 🪸   | 02          | 1        | Functions        | 🕳️ Not Started | #           |
+|     |             | 2        | Closures         | 🕳️ Not Started | #           |
+| 🐋  | 03          | 1        | Objects          | 🕳️ Not Started | #           |
+|     |             | 2        | Prototypes       | 🕳️ Not Started | #           |
+| 🪼   | 04          | 1        | Event Loop       | 🕳️ Not Started | #           |
+|     |             | 2        | Promises & Async | 🕳️ Not Started | #           |
+
+_(Mark your progress using ☑️, 🛠️, or 🕳️.)_
 
 <br />
 
 ## 🐚 Reference Links
+
 - [My Study Notes](#)
 - [My Exercises](#)
 - [Other Resources](#)

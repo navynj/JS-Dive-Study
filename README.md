@@ -23,8 +23,8 @@ In JavaScript, as in the ocean, the deeper you go, the more fascinating it gets.
 | [Yoonji](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/yoonji) | [Ayaka](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/ayaka) | [Samir](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/samir) | [Maicon](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/maicon) |
 | [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/john) | [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/luiz) | [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/rafael) | [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/charlie) |
 | [John](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/john) | [Luiz](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/luiz) | [Rafael](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/rafael) | [Charlie](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/charlie) |
-| [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/tamaki) |                                       |                                       |                                       |
-| [Tamaki](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/tamaki) |                                       |                                       |                                       |
+| [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/tamaki) | [![⬜️](https://em-content.zobj.net/source/apple/391/white-large-square_2b1c.png)](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/yui) |                                       |                                       |
+| [Tamaki](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/tamaki) | [Yui](https://github.com/navynj/JS-Dive-Study/tree/main/public/logs/yui)  |                                       |                                       |
 
 <br />
 
@@ -33,8 +33,8 @@ In JavaScript, as in the ocean, the deeper you go, the more fascinating it gets.
 
 |No. |                  | Topics                     | Details                                                                                                  |
 |-|----------------------------|---------------------------|---------------------------------------------------------------------------------------------------------|
-|**01**| 🪙 | Values                | - Understanding **Primitive vs Reference Types**.<br> - Exploring **Type Coercion**.                    |
-|                   |   🫙   | Variables             | - Mastering **Variable Declaration** (`var`, `let`, `const`).<br> - Discovering **Scope and Hoisting**.<br> - Introduction to **Global Execution Context** and the creation phase. |
+|**01**| 🪙 | [**Values**](https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap01/1_values) | - Understanding **Primitive vs Reference Types**.<br> - Exploring **Type Coercion**.                    |
+|                   |   🫙   | [**Variables**](https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap01/2_variables) | - Mastering **Variable Declaration** (`var`, `let`, `const`).<br> - Discovering **Scope and Hoisting**.<br> - Introduction to **Global Execution Context** and the creation phase. |
 |**02**| 📐 | **Functions**             | - Differentiating **Function Declarations vs Expressions**.<br> - Harnessing **Higher-Order Functions**. |
 |              | 🫧 | **Closures**              | - Capturing state with **Closures** and applying them in the wild.<br> - Understanding **Function Execution Contexts** and the Call Stack. |
 |**03**| 🖇️ | **Objects**               | - Constructing and managing **Objects**.                                                               |
@@ -45,7 +45,7 @@ In JavaScript, as in the ocean, the deeper you go, the more fascinating it gets.
 
 <br />
 
-## 🗝️ **How we swim together**
+## 🗝️ **How It Works**
 
 Each session includes:
 1. **Concept Study**:
@@ -89,7 +89,7 @@ Discuss feedback with your peers.
 
 <br />
 
-## 🌊 Why Dive?
+## 🔭 Ready To Explore?
 JavaScript is like an ocean—vast, sometimes unpredictable, but full of beauty and possibilities. <br />Here at JS Dive Study, we’re not afraid to get our hands wet, whether we’re untangling closures, riding the async waves, or hunting for the perfect prototype.
 
 Let’s navigate this journey together, one dive at a time. <br /> Don’t just float. **Dive and explore JavaScript**. 
