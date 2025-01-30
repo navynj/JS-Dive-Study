@@ -35,7 +35,7 @@ In JavaScript, as in the ocean, the deeper you go, the more fascinating it gets.
 |-|----------------------------|---------------------------|---------------------------------------------------------------------------------------------------------|
 |**01**| 🪙 | [**Values**](https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap01/1_values) | - Understanding **Primitive vs Reference Types**.<br> - Exploring **Type Coercion**.                    |
 |                   |   🫙   | [**Variables**](https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap01/2_variables) | - Mastering **Variable Declaration** (`var`, `let`, `const`).<br> - Discovering **Scope and Hoisting**.<br> - Introduction to **Global Execution Context** and the creation phase. |
-|**02**| 📐 | **Functions**             | - Differentiating **Function Declarations vs Expressions**.<br> - Harnessing **Higher-Order Functions**. |
+|**02**| 📐 | **Functions**             | - Differentiating **Function Declarations vs Expressions**.<br> - Harnessing **Higher-Order Functions**. <br />- Understanding **recursion**. |
 |              | 🫧 | **Closures**              | - Capturing state with **Closures** and applying them in the wild.<br> - Understanding **Function Execution Contexts** and the Call Stack. |
 |**03**| 🖇️ | **Objects**               | - Constructing and managing **Objects**.                                                               |
 |          |  ⛓️  | **Prototypes**            | - Navigating **Prototype Inheritance** and the prototype chain.<br> - Exploring `this` in different execution contexts (global, object methods, arrow functions). |

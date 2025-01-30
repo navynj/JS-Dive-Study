@@ -5,16 +5,17 @@
 Build a calculator function that performs basic arithmetic operations (`add`, `subtract`, `multiply`, `divide`). The function should detect if **type coercion** occurs during the operation and handle it accordingly:
 
 - If both inputs are numbers, perform the operation normally.
-- If one or both inputs are strings that can be coerced to numbers, log a warning that type coercion occurred and still perform the operation.
-- If coercion fails (e.g., non-numeric strings), throw an error.
+- If one or both inputs are strings that can be coerced to numbers, log a warning that type coercion occurred, specifying **from which type to which type** the coercion happened, and still perform the operation.
+- If coercion fails (e.g., non-numeric strings that cannot be converted to numbers), throw an error.
+- If `add` is used and a `number → string` coercion results in string concatenation instead of numeric addition, log that **implicit coercion to string concatenation** occurred.
 
 <br />
 
 ## **Function Signature**
 
-```jsx
-function calculator(a: any, b: any, operation: string): number;
-```
+'''javascript
+function calculator(a: any, b: any, operation: string): number | string;
+'''
 
 <br />
 
@@ -28,8 +29,8 @@ function calculator(a: any, b: any, operation: string): number;
 
 ## **Output**
 
-- Returns the result of the operation as a number.
-- Logs a message if type coercion occurred.
+- Returns the result of the operation as a number (or a string in the case of string concatenation).
+- Logs a message if type coercion occurred, specifying the conversion details.
 
 <br />
 
@@ -38,22 +39,44 @@ function calculator(a: any, b: any, operation: string): number;
 1. Handle only valid operations: `"add"`, `"subtract"`, `"multiply"`, `"divide"`.
 2. If inputs cannot be coerced to numbers, throw an error.
 3. Return a precise result for division (e.g., `5 / 2 = 2.5`).
+4. If `add` is used and results in string concatenation, return the concatenated string and log a message.
 
 <br />
 
 ## **Example**
 
-```js
+'''javascript
 console.log(calculator(5, 10, "add"));
 // Output: 15
 
 console.log(calculator("5", "10", "multiply"));
 // Output: 50
-// Warning: Type coercion occurred for one or both inputs.
+// Warning: Type coercion occurred: "5" (string → number), "10" (string → number).
 
 console.log(calculator("abc", 10, "subtract"));
 // Output: Error: Invalid input: both operands must be numbers or coercible to numbers.
-```
+
+console.log(calculator(5, "20", "divide"));
+// Output: 0.25
+// Warning: Type coercion occurred: "20" (string → number).
+
+console.log(calculator("30", 10, "add"));
+// Output: 40
+// Warning: Type coercion occurred: "30" (string → number).
+
+console.log(calculator(50, " is a number", "add"));
+// Output: "50 is a number"
+// Warning: Type coercion occurred: 50 (number → string).
+// Note: Implicit coercion resulted in string concatenation.
+
+console.log(calculator(40, 30, "add"));
+// Output: 70
+
+console.log(calculator(100, "1", "add"));
+// Output: "100 apples"
+// Warning: Type coercion occurred: 101 (number → string).
+// Note: Implicit coercion resulted in string concatenation.
+'''
 
 <br />
 
@@ -63,13 +86,12 @@ console.log(calculator("abc", 10, "subtract"));
     - Check if `a` and `b` are valid numbers or coercible to numbers.
     - If not, throw an error.
 2. **Detect Type Coercion**:
-    - Use `typeof` to check the types of `a` and `b`.
-    - If either operand is a string, log a warning.
+    - Use `typeof` to check the types of `a` and `b` before conversion.
+    - If coercion occurs, log a message detailing **which values were coerced and their type changes**.
+    - If the `add` operation results in a string concatenation (`number → string`), log a **special warning**.
 3. **Perform Operation**:
     - Based on the `operation` parameter, perform the arithmetic calculation.
-    - Ensure results are numbers.
-
-<br />
+    - Ensure results are numbers, except in cases where concatenation occurs.
 
 <br />
 
@@ -79,7 +101,7 @@ console.log(calculator("abc", 10, "subtract"));
     - Keep a global count of how many times coercion occurs.
     - Return the count at the end of the operation.
 2. **Support More Operations**:
-    - Add `%` (modulus) or `*` (exponentiation).
+    - Add `%` (modulus) or `**` (exponentiation).
 3. **Handle Arrays**:
     - If inputs are arrays, perform element-wise operations with coercion checks.
 

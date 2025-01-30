@@ -1,0 +1,8 @@
+# Study Note
+
+
+# Exercises
+| No. | Exercise                 | PR |
+| --- | ------------------------ | -- |
+| 01  | [Type Coercion Calculator](https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise01.md) | # |
+| 02  | [Game Save Point Management](https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise02.md) | # |
