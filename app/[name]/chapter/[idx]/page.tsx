@@ -2,7 +2,7 @@
 
 import fs from "fs/promises";
 import path from "path";
-import MdxRenderer from "@/components/MdxRenderer";
+// import MdxRenderer from "@/components/MdxRenderer";
 
 const PersonalPage = async ({
   params,
@@ -40,7 +40,8 @@ const PersonalPage = async ({
     })
   );
 
-  return <MdxRenderer mdxContents={mdxContents} />;
+  return null;
+  // return <MdxRenderer mdxContents={mdxContents} />;
 };
 
 export default PersonalPage;
