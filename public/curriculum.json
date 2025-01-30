@@ -1,0 +1,114 @@
+{
+  "data": [
+    [
+      {
+        "icon": "🪙",
+        "title": "Values",
+        "content": [
+          {
+            "content": "Data Types",
+            "children": [
+              { "content": "Primitive" },
+              { "content": "Reference" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise02.md",
+                  "subtitle": "exercise 02",
+                  "title": "Game Save Point Management"
+                }
+              }
+            ]
+          },
+          {
+            "content": "Operation",
+            "children": [
+              { "content": "Arbitary Operation" },
+              { "content": "Comparison" },
+              { "content": "Type Coercion" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise01.md",
+                  "subtitle": "exercise 02",
+                  "title": "Type Coercion Calculator"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "icon": "🫙",
+        "title": "Variables",
+        "content": [
+            {
+              "content": "Importance",
+              "children": [
+                { "content": "Eliminate repeatition" },
+                {
+                  "link": {
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise01.md",
+                    "subtitle": "exercise 01",
+                    "title": "Ride Fare System"
+                  }
+                }
+              ]
+            },
+            {
+              "content": "Declaration",
+              "children": [
+                { "content": "var, let, const" },
+                {
+                  "link": {
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise02.md",
+                    "subtitle": "exercise 02",
+                    "title": "JsCafe & Discount"
+                  }
+                }
+              ]
+            },
+            {
+              "content": "Access",
+              "children": [
+                { "content": "Global Scope" },
+                { "content": "Function Scope" },
+                { "content": "Block Scope" },
+                {
+                  "link": {
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise03.md",
+                    "subtitle": "exercise 03",
+                    "title": "Understanding Scope"
+                  }
+                }
+              ]
+            },
+            {
+              "content": "Lifecycle",
+              "children": [
+                { "content": "Execution Context" },
+                { "content": "Hoisting" },
+                {
+                  "link": {
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise04.md",
+                    "subtitle": "exercise 04",
+                    "title": "Understanding EC & Hoisting"
+                  }
+                }
+              ]
+            }
+        ]
+      }
+    ],
+    [
+      { "icon": "📐", "title": "Function" },
+      { "icon": "🫧", "title": "Closure" }
+    ],
+    [
+      { "icon": "🖇️", "title": "Object" },
+      { "icon": "⛓️", "title": "Prototype" }
+    ],
+    [
+      { "icon": "🛞", "title": "Event Loop" },
+      { "icon": "🕑", "title": "Asynchronous" }
+    ]
+  ]
+}

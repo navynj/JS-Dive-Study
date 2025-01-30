@@ -1,4 +1,4 @@
-# 🐚 Chapter 01 - 1: Study Guide – Values, Data Types, and Operations
+# 🪙 Chapter 01 - 1: Study Guide – Values, Data Types, and Operations
 
 Welcome to **Chapter 01 - 1**! <br/> This guide will help you explore **values**, their **characteristics**, and how they are used in **operations**. <br /> Follow the structure below to study and document your understanding.
 
