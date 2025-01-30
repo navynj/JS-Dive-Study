@@ -1,5 +1,6 @@
 'use client';
 
+import CurriculumNav from '@/components/CurriculumNav';
 import Profile from '@/components/Profile';
 import { DataContext } from '@/provider/DataProvider';
 import { MemberType } from '@/types/member';
@@ -17,22 +18,7 @@ export default function Home() {
           <p className="font-black text-xl">CICCC WAD M-0125</p>
           <h2 className="text-6xl tracking-tighter">JS Dive Study</h2>
         </div>
-        <div className="flex gap-2">
-          {data?.curriculum.map((chapter: any, i: number) => (
-            <Link
-              key={i}
-              href={`/chapter-0${i + 1}`}
-              className="p-6 rounded-xl hover:shadow border border-white hover:border-gray-100 transition-all duration-400"
-            >
-              <h5 className="mb-4 text-[1.3rem]">Chapter 0{i + 1}</h5>
-              {chapter.map((part: any) => (
-                <p className="text-lg py-2 flex gap-2 items-center" key={part.title}>
-                  <span className="text-2xl">{part.icon}</span> {part.title}
-                </p>
-              ))}
-            </Link>
-          ))}
-        </div>
+        <CurriculumNav />
       </header>
       <main className="w-full overflow-x-scroll">
         <table className="w-full mb-40">
@@ -43,7 +29,9 @@ export default function Home() {
               <th>Task</th>
               {data?.members.map((member) => (
                 <th key={member.name}>
-                  <Profile {...member} />
+                  <Link href={`/${member.name}`}>
+                    <Profile {...member} />
+                  </Link>
                 </th>
               ))}
             </tr>
@@ -63,19 +51,30 @@ export default function Home() {
                 }
                 return (
                   <React.Fragment key={`chapter-${chapterIndex}-section-${sectionIndex}`}>
-                    <tr className={!exercises.length && sectionIndex === chapters.length - 1 ? 'border-b border-gray-300' : undefined}>
-                      <td className='font-semibold text-lg'>
+                    <tr
+                      className={
+                        !exercises.length && sectionIndex === chapters.length - 1
+                          ? 'border-b border-gray-300'
+                          : undefined
+                      }
+                    >
+                      <td className="font-semibold text-lg">
                         {sectionIndex === 0 &&
                           chapters.length &&
                           '0' + (chapterIndex + 1)}
                       </td>
-                      <td className='font-semibold flex gap-2 items-center py-2'><span className="text-xl">{section.icon}</span><span>{section.title}</span></td>
-                      <td  className='py-2'>
+                      <td className="font-semibold flex gap-2 items-center py-2">
+                        <span className="text-xl">{section.icon}</span>
+                        <span>{section.title}</span>
+                      </td>
+                      <td className="py-2">
                         {section.content?.length && (
                           <Link
                             className="underline"
-                            href={`https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap0${chapterIndex + 1}/${sectionIndex + 1}_${section?.title?.toLowerCase() || ''}`}
-                            target='_blank'
+                            href={`https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap0${
+                              chapterIndex + 1
+                            }/${sectionIndex + 1}_${section?.title?.toLowerCase() || ''}`}
+                            target="_blank"
                           >
                             Study Note
                           </Link>
@@ -83,11 +82,22 @@ export default function Home() {
                       </td>
                     </tr>
                     {exercises?.map((exercise, exIndex) => (
-                      <tr key={`exercise-${chapterIndex}-${sectionIndex}-${exIndex}`} className={exIndex === exercises.length - 1 ? 'border-b border-gray-300' : undefined}>
+                      <tr
+                        key={`exercise-${chapterIndex}-${sectionIndex}-${exIndex}`}
+                        className={
+                          exIndex === exercises.length - 1
+                            ? 'border-b border-gray-300'
+                            : undefined
+                        }
+                      >
                         <td></td>
                         <td></td>
-                        <td className='py-2'>
-                          <Link className='underline' href={exercise?.link?.path || ''} target='_blank'>
+                        <td className="py-2">
+                          <Link
+                            className="underline"
+                            href={exercise?.link?.path || ''}
+                            target="_blank"
+                          >
                             Exercise {String(exIndex + 1).padStart(2, '0')}
                           </Link>
                         </td>

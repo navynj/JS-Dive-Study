@@ -1,8 +1,12 @@
-import React from 'react'
-const PersonalPage = () => {
-  return (
-    <div>PersonalPage</div>
-  )
-}
+import React from 'react';
 
-export default PersonalPage
+const PersonalPage = async ({
+    params,
+  }: {
+    params: Promise<{ name: string }>
+  }) => {
+const name = (await params).name;
+  return <div></div>;
+};
+
+export default PersonalPage;
