@@ -1,0 +1,99 @@
+/* GitHub Markdown 스타일 */
+.markdown-body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 제목 스타일 (GitHub 스타일 적용) */
+.md-heading-1 {
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 10px;
+  margin-top: 24px;
+}
+
+.md-heading-2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+
+.md-heading-3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.md-heading-4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.md-heading-5 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.md-heading-6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #586069;
+}
+
+/* 테이블 스타일 */
+.markdown-body table {
+  border-radius: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.markdown-body table th {
+  background-color: #f6f8fa;
+  font-weight: bold;
+}
+
+/* 코드 블록 스타일 */
+.markdown-body pre {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* 인라인 코드 스타일 */
+.markdown-body code {
+  font-family: monospace;
+  background-color: #f6f8fa;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* 링크 스타일 */
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}

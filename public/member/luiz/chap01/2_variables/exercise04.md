@@ -1,2 +1,0 @@
-- Copy the content of link below here and follow the instruction.
-  - link: https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise04.md

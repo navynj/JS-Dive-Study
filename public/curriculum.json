@@ -12,7 +12,7 @@
               { "content": "Reference" },
               {
                 "link": {
-                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise02.md",
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise02.mdx",
                   "subtitle": "exercise 02",
                   "title": "Game Save Point Management"
                 }
@@ -27,7 +27,7 @@
               { "content": "Type Coercion" },
               {
                 "link": {
-                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise01.md",
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise01.mdx",
                   "subtitle": "exercise 01",
                   "title": "Type Coercion Calculator"
                 }
@@ -46,7 +46,7 @@
                 { "content": "Eliminate repeatition" },
                 {
                   "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise01.md",
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise01.mdx",
                     "subtitle": "exercise 01",
                     "title": "Ride Fare System"
                   }
@@ -59,7 +59,7 @@
                 { "content": "var, let, const" },
                 {
                   "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise02.md",
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise02.mdx",
                     "subtitle": "exercise 02",
                     "title": "JsCafe & Discount"
                   }
@@ -74,7 +74,7 @@
                 { "content": "Block Scope" },
                 {
                   "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise03.md",
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise03.mdx",
                     "subtitle": "exercise 03",
                     "title": "Understanding Scope"
                   }
@@ -88,7 +88,7 @@
                 { "content": "Hoisting" },
                 {
                   "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise04.md",
+                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise04.mdx",
                     "subtitle": "exercise 04",
                     "title": "Understanding EC & Hoisting"
                   }

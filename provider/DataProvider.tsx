@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { createContext, PropsWithChildren, useEffect, useState } from "react";
+import { createContext, PropsWithChildren, useEffect, useState } from 'react';
 
 interface Member {
   name: string;
@@ -26,29 +26,32 @@ const DataProvider = ({ children }: PropsWithChildren) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        // 1. Get member names
-        const membersResponse = await fetch("/api/member");
+        // 1. Get member names from API
+        const membersResponse = await fetch('/api/member');
         const memberNames: string[] = await membersResponse.json();
 
-        // 2. Get member emoji from `README.md`
+        // 2. Get member emoji from `README.mdx`
         const membersData = await Promise.all(
           memberNames.map(async (name) => {
             try {
-              const readmeResponse = await fetch(`/member/${name}/README.md`);
-              if (!readmeResponse.ok) throw new Error("README not found");
+              const readmeResponse = await fetch(`/api/member/${name}`);
+              if (!readmeResponse.ok) throw new Error('README not found');
 
-              const readmeText = await readmeResponse.text();
-              const icon = readmeText.trim()[2] || ""; // First Emoji
+              const readmeData = await readmeResponse.json();
+              const readmeText = readmeData.content || '';
+              
+              const icon = readmeText.trim()[2];
+
               return { name, icon };
             } catch (error) {
               console.warn(`⚠️ Failed to fetch README for ${name}`);
-              return { name, icon: "" };
+              return { name, icon: '' };
             }
           })
         );
 
         // 3. Get curriculum data
-        const curriculumResponse = await fetch("/api/curriculum");
+        const curriculumResponse = await fetch('/api/curriculum');
         const curriculumData = await curriculumResponse.json();
 
         setData({
@@ -56,7 +59,7 @@ const DataProvider = ({ children }: PropsWithChildren) => {
           members: membersData,
         });
       } catch (error) {
-        console.error("Failed to fetch data:", error);
+        console.error('Failed to fetch data:', error);
       } finally {
         setLoading(false);
       }

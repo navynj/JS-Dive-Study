@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const memberDir = path.join(process.cwd(), 'public', 'member');
+    const memberDir = path.join(process.cwd(), 'content', 'member');
     const memberNames = await fs.readdir(memberDir, 'utf-8');
 
     return NextResponse.json(memberNames);
