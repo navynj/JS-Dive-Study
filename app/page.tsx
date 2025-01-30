@@ -71,7 +71,7 @@ export default function Home() {
                         {section.content?.length && (
                           <Link
                             className="underline"
-                            href={`https://github.com/navynj/JS-Dive-Study/tree/main/public/guideline/chap0${
+                            href={`https://github.com/navynj/JS-Dive-Study/tree/main/content/guideline/chap0${
                               chapterIndex + 1
                             }/${sectionIndex + 1}_${section?.title?.toLowerCase() || ''}`}
                             target="_blank"
