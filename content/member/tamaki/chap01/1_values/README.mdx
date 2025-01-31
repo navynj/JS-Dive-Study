@@ -1,4 +1,62 @@
 # Study Note
+  - What is a value in JavaScript?
+  A value in JavaScript is a piece of data that can be stored in a variable, returned from a function, or passed around in a program. 
+
+  - How do values represent data in your program?
+  Values in JavaScript represent data by being stored in variables and manipulated through operations. There are two main types of values:
+  Primitive values (e.g., numbers, strings, booleans) are immutable and stored directly in memory.
+  Reference values (e.g., objects, arrays) are mutable and stored as references in memory.
+
+
+  - The seven primitive types in JavaScript
+  Number,String,Boolean,Undefined,Null,Symbol,BigInt
+  Symbol: Represents a unique and immutable value, often used for object properties.
+  BigInt: Represents large integers beyond Number.MAX_SAFE_INTEGER
+
+  - Characteristics of primitive types with examples (e.g., immutability).
+  let str = "hello";
+  str.toUpperCase(); // Returns "HELLO", but `str` remains "hello"
+  console.log(str); // "hello"
+    
+
+  - What are reference types, and how do they differ from primitives?
+  Reference types are objects, arrays, and functions. Unlike primitive types, which store values directly, reference types store a reference (memory address) to the value.
+
+  - Concepts of mutability and immutability.
+  Mutable values can be modified after creation (e.g., objects, arrays).
+  Immutable values cannot be changed once created (e.g., strings, numbers, booleans).
+
+  - The difference between shallow and deep copies.
+  Shallow Copy: Copies only the first-level properties; nested objects remain referenced.
+  Deep Copy: Creates a fully independent copy, including nested structures.
+
+  - Operators (+, -, *, /, %)
+  Addition (+): Adds two numbers or concatenates strings.
+  Subtraction (-): Subtracts numbers.
+  Multiplication (*): Multiplies numbers.
+  Division (/): Divides numbers.
+  Modulus (%): Returns the remainder of division.
+  
+  - Logical Operators
+  AND (&&): Returns true if both operands are true.
+  OR (||): Returns true if at least one operand is true.
+  NOT (!): Inverts a boolean value.
+  
+  - The difference between '==' and '==='
+  == (Loose equality): Performs type coercion before comparing.
+  === (Strict equality): Compares both value and type.
+  
+  - The difference between implicit and explicit type coercion.
+  Implicit Type Coercion: JavaScript automatically converts types.
+  Explicit Type Coercion: Conversion is done manually using functions.
+  
+  - How type coercion works in operations like addition, subtraction, and comparison.
+  ・Addition (+)
+  If one operand is a string, the other is converted to a string.
+  ・Subtraction (-)
+  Converts both operands to numbers.
+  ・Comparison (==)
+  Converts types to compare values.
 
 # Exercises
 
