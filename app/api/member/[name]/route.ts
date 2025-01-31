@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
 
   try {
     // README.mdx 경로 설정
-    const filePath = path.join(process.cwd(), "src", "content", "member", name, "README.mdx");
+    const filePath = path.join(process.cwd(), "content", "member", name, "README.mdx");
 
     // 파일 읽기
     const fileContent = await fs.readFile(filePath, "utf-8");

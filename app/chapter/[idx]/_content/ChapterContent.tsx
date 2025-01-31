@@ -9,13 +9,13 @@ const ChapterContent = ({ idx }: { idx: number }) => {
   return (
     <div>
       <h3 className="block text-center text-2xl mt-8 mb-6">Chapter 0{idx}</h3>
-      <div className="flex gap-16 justify-center">
+      <div className="flex sm:flex-col gap-16 justify-center">
         {data?.curriculum &&
           data.curriculum[idx - 1]?.map((part: PartContentProps) => (
             <PartContent key={part.title} {...part} />
           ))}
       </div>
-      <ul className="flex justify-center gap-4 mt-10 mb-40">
+      <ul className="flex justify-center gap-4 mt-10 mb-40 sm:flex-wrap sm:mt-20">
         {data?.members?.map((member) => (
           <Link key={member.name} href={`/${member.name}/chapter/${idx}`}>
             <Profile {...member} size="md" />

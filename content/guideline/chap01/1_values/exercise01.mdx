@@ -13,9 +13,9 @@ Build a calculator function that performs basic arithmetic operations (`add`, `s
 
 ## **Function Signature**
 
-'''javascript
+```javascript
 function calculator(a: any, b: any, operation: string): number | string;
-'''
+```
 
 <br />
 
@@ -45,7 +45,8 @@ function calculator(a: any, b: any, operation: string): number | string;
 
 ## **Example**
 
-'''javascript
+```javascript
+
 console.log(calculator(5, 10, "add"));
 // Output: 15
 
@@ -61,8 +62,9 @@ console.log(calculator(5, "20", "divide"));
 // Warning: Type coercion occurred: "20" (string → number).
 
 console.log(calculator("30", 10, "add"));
-// Output: 40
-// Warning: Type coercion occurred: "30" (string → number).
+// Output: 3010
+// Warning: Type coercion occurred: 10 (number → string).
+// Note: Implicit coercion resulted in string concatenation.
 
 console.log(calculator(50, " is a number", "add"));
 // Output: "50 is a number"
@@ -71,12 +73,7 @@ console.log(calculator(50, " is a number", "add"));
 
 console.log(calculator(40, 30, "add"));
 // Output: 70
-
-console.log(calculator(100, "1", "add"));
-// Output: "100 apples"
-// Warning: Type coercion occurred: 101 (number → string).
-// Note: Implicit coercion resulted in string concatenation.
-'''
+```
 
 <br />
 

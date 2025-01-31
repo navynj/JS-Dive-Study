@@ -12,7 +12,7 @@
               { "content": "Reference" },
               {
                 "link": {
-                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise02.mdx",
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/1_values/exercise02.mdx",
                   "subtitle": "exercise 02",
                   "title": "Game Save Point Management"
                 }
@@ -27,7 +27,7 @@
               { "content": "Type Coercion" },
               {
                 "link": {
-                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/1_values/exercise01.mdx",
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/1_values/exercise01.mdx",
                   "subtitle": "exercise 01",
                   "title": "Type Coercion Calculator"
                 }
@@ -40,61 +40,61 @@
         "icon": "🫙",
         "title": "Variables",
         "content": [
-            {
-              "content": "Importance",
-              "children": [
-                { "content": "Eliminate repeatition" },
-                {
-                  "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise01.mdx",
-                    "subtitle": "exercise 01",
-                    "title": "Ride Fare System"
-                  }
+          {
+            "content": "Importance",
+            "children": [
+              { "content": "Eliminate repeatition" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/2_variables/exercise01.mdx",
+                  "subtitle": "exercise 01",
+                  "title": "Ride Fare System"
                 }
-              ]
-            },
-            {
-              "content": "Declaration",
-              "children": [
-                { "content": "var, let, const" },
-                {
-                  "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise02.mdx",
-                    "subtitle": "exercise 02",
-                    "title": "JsCafe & Discount"
-                  }
+              }
+            ]
+          },
+          {
+            "content": "Declaration",
+            "children": [
+              { "content": "var, let, const" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/2_variables/exercise02.mdx",
+                  "subtitle": "exercise 02",
+                  "title": "JsCafe & Discount"
                 }
-              ]
-            },
-            {
-              "content": "Access",
-              "children": [
-                { "content": "Global Scope" },
-                { "content": "Function Scope" },
-                { "content": "Block Scope" },
-                {
-                  "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise03.mdx",
-                    "subtitle": "exercise 03",
-                    "title": "Understanding Scope"
-                  }
+              }
+            ]
+          },
+          {
+            "content": "Access",
+            "children": [
+              { "content": "Global Scope" },
+              { "content": "Function Scope" },
+              { "content": "Block Scope" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/2_variables/exercise03.mdx",
+                  "subtitle": "exercise 03",
+                  "title": "Understanding Scope"
                 }
-              ]
-            },
-            {
-              "content": "Lifecycle",
-              "children": [
-                { "content": "Execution Context" },
-                { "content": "Hoisting" },
-                {
-                  "link": {
-                    "path": "https://github.com/navynj/JS-Dive-Study/blob/main/public/guideline/chap01/2_variables/exercise04.mdx",
-                    "subtitle": "exercise 04",
-                    "title": "Understanding EC & Hoisting"
-                  }
+              }
+            ]
+          },
+          {
+            "content": "Lifecycle",
+            "children": [
+              { "content": "Execution Context" },
+              { "content": "Hoisting" },
+              {
+                "link": {
+                  "path": "https://github.com/navynj/JS-Dive-Study/blob/main/content/guideline/chap01/2_variables/exercise04.mdx",
+                  "subtitle": "exercise 04",
+                  "title": "Understanding EC & Hoisting"
                 }
-              ]
-            }
+              }
+            ]
+          }
         ]
       }
     ],
