@@ -23,7 +23,7 @@ const CurriculumNav = ({ hrefPrefix, size }: { hrefPrefix?: string; size?: 'sm' 
   }
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 sm:grid sm:grid-cols-2">
       {data?.curriculum.map((chapter: any, i: number) => (
         <Link
           key={i}
@@ -34,10 +34,10 @@ const CurriculumNav = ({ hrefPrefix, size }: { hrefPrefix?: string; size?: 'sm' 
               : ''
           }`}
         >
-          <h5 className={`mb-4 ${chapterSize}`}>Chapter 0{i + 1}</h5>
+          <h5 className={`mb-4 sm:mb-2 ${chapterSize} sm:text-sm`}>Chapter 0{i + 1}</h5>
           {chapter.map((part: any) => (
             <p
-              className={`text-lg ${titlePadding} flex gap-2 items-center`}
+              className={`text-lg ${titlePadding} sm:py-1 flex gap-2 items-center`}
               key={part.title}
             >
               <span className={iconSize}>{part.icon}</span>{' '}

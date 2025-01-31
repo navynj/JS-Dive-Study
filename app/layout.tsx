@@ -17,10 +17,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <DataProvider>
-        <body className="max-w-[80rem] mx-auto mt-16 px-16">
+        <body className="max-w-[80rem] mx-auto mt-16 px-16 sm:px-8 sm:mt-8">
           <nav>
             <Link href="/">
-              <h1 className="text-lg">🌊 JS Dive Study 🐋</h1>
+              <h1 className="text-lg sm:text-sm">🌊 JS Dive Study 🐋</h1>
             </Link>
           </nav>
           {children}

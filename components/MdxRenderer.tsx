@@ -10,7 +10,7 @@ const MdxRenderer = ({ mdxContents }: { mdxContents: { title: string; content: s
   return (
     <div className="markdown w-full dark:text-white">
       {mdxContents.map((mdx, index) => (
-        <div key={index} className="mb-10 p-6 bg-white dark:bg-gray-900 rounded-2xl">
+        <div key={index} className="mb-10 sm:mb-20 p-6 bg-white dark:bg-gray-900 rounded-2xl">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}

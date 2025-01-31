@@ -41,10 +41,10 @@ const PersonalPage = async ({
   );
 
   return mdxContents.map((content, i) => (
-    <div key={content.title} className="flex gap-10 w-full max-w-[960px] mx-auto px-10">
-      <div className="flex flex-col gap-2">
-        <span className='text-8xl'>{partData[i].icon}</span>
-        <span className='text-5xl font-extrabold'>{partData[i].title}</span>
+    <div key={content.title} className="flex sm:flex-col gap-10 w-full max-w-[960px] mx-auto px-10 sm:px-0 sm:gap-0">
+      <div className="flex flex-col gap-2 sm:px-6">
+        <span className='text-8xl sm:text-7xl'>{partData[i].icon}</span>
+        <span className='text-5xl sm:text-4xl font-extrabold'>{partData[i].title}</span>
       </div>
       <MdxRenderer mdxContents={[content]} />
     </div>

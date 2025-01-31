@@ -16,7 +16,7 @@ export default function Home() {
       <header>
         <div className="text-center my-8">
           <p className="font-black text-xl">CICCC WAD M-0125</p>
-          <h2 className="text-6xl tracking-tighter">JS Dive Study</h2>
+          <h2 className="text-6xl sm:text-5xl tracking-tighter">JS Dive Study</h2>
         </div>
         <CurriculumNav />
       </header>

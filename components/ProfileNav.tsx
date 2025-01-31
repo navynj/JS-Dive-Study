@@ -10,7 +10,7 @@ const ProfileNav = () => {
   const data = useContext(DataContext);
 
   return (
-    <ul className="flex gap-4">
+    <ul className="flex gap-4 sm:flex-wrap">
       {data?.members?.map((member) => (
         <li key={member.name}>
           <Link
