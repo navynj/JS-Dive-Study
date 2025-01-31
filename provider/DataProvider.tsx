@@ -39,8 +39,13 @@ const DataProvider = ({ children }: PropsWithChildren) => {
 
               const readmeData = await readmeResponse.json();
               const readmeText = readmeData.content || '';
-              
-              const icon = readmeText.trim()[2];
+
+              const utf8Decoder = new TextDecoder('utf-8');
+              const readmeTextUtf8 = utf8Decoder.decode(new TextEncoder().encode(readmeText.normalize('NFC')));
+
+              const emojiRegex = /\p{Extended_Pictographic}/gu;
+              const iconMatch = readmeTextUtf8.match(emojiRegex);
+              const icon = iconMatch ? iconMatch[0] : '';
 
               return { name, icon };
             } catch (error) {

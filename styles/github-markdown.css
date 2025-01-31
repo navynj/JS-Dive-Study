@@ -1,0 +1,106 @@
+/* Markdown 스타일을 markdown 내부에서만 적용 */
+.markdown {
+  line-height: 1.75;
+}
+
+/* 테이블 스타일 (모서리 둥글게 + 테두리 hidden 방지) */
+.markdown .table-container {
+  overflow-x: auto;
+  padding: 8px; /* 테두리 잘리는 것 방지 */
+  border-radius: 10px; /* 테두리 둥글게 */
+}
+
+.markdown table {
+  width: 100%;
+  min-width: 100%;
+  border-spacing: 0;
+  border: 0.5px solid #d1d5db;
+  border-radius: 10px;
+  overflow: hidden; /* 둥근 모서리 적용 */
+  border-collapse: separate; /* collapse이면 border-radius 적용 안 됨 */
+}
+
+.markdown th,
+.markdown td {
+  border: 0.5px solid #d1d5db;
+  padding: 6px 12px;
+  text-align: left;
+}
+
+.markdown th {
+  background-color: #f3f4f6;
+  font-weight: extrabold;
+}
+
+.markdown td {
+  background-color: white;
+}
+
+/* 헤딩 스타일 */
+.markdown h1 {
+  font-size: 2rem; /* 36px */
+  font-weight: extrabold;
+  border-bottom: 2px solid #d1d5db;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.5rem; /* 28px */
+  font-weight: extrabold;
+  border-bottom: 1px solid #d1d5db;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown h3 {
+  font-size: 1.25rem; /* 24px */
+  font-weight: extrabold;
+  margin-bottom: 0.5rem;
+}
+
+.markdown h4 {
+  font-size: 1.125rem; /* 20px */
+  font-weight: extrabold;
+  margin-bottom: 0.4rem;
+}
+
+.markdown h5 {
+  font-size: 1.1rem; /* 18px */
+  font-weight: extrabold;
+  margin-bottom: 0.3rem;
+}
+
+.markdown h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: extrabold;
+  margin-bottom: 0.2rem;
+  color: #6b7280;
+}
+
+/* 코드 블록 */
+.markdown pre {
+  background: #1e293b;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.markdown code {
+  font-family: "Fira Code", monospace;
+}
+
+/* 블록 인용구 */
+.markdown blockquote {
+  border-left: 4px solid #6b7280;
+  padding-left: 16px;
+  font-style: italic;
+  color: #374151;
+}
+
+/* 링크 스타일 */
+.markdown a {
+  color: #3b82f6;
+  text-decoration: underline;
+}

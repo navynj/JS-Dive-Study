@@ -13,7 +13,7 @@ const PersonalPageLayout = async ({
 }>) => {
   const name = (await params).name;
   return <div>
-    <div className='flex flex-col items-center gap-4 pt-4'>
+    <div className='flex flex-col items-center gap-4 pt-4 mb-10'>
     <ProfileNav />
     <Link href={`/${name}`}>
       <Profile className='mt-4' name={name} transparent={true} size='xl' />
