@@ -15,6 +15,18 @@ const MdxRenderer = ({ mdxContents }: { mdxContents: { title: string; content: s
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
             components={{
+              ul: ({ children }) => <ul className="list-disc pl-6">{children}</ul>,
+              ol: ({ children }) => <ol className="list-decimal pl-6">{children}</ol>,
+              li: ({ children }) => <li className="mb-1">{children}</li>,
+              input: ({ type, checked }) =>
+                type === "checkbox" ? (
+                  <input
+                    type="checkbox"
+                    className="w-4 h-4 accent-blue-500 mr-2"
+                    checked={checked}
+                    readOnly
+                  />
+                ) : null,
               table: ({ children }) => (
                 <div className="table-container">
                   <table>{children}</table>
