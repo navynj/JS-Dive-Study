@@ -17,23 +17,39 @@ function calculator(a, b, operation) {
             break;
     }
 
+    const typeA = typeof a;
+    const typeB = typeof b;
+    const warning = 'Warning: Type coercion occurred: ';
+    let warnA = "";
+    let warnB = "";
     if (!answer[0]) {
         answer[0] = "Error: Invalid input: both operands must be numbers or coercible to numbers.";
-    } else if (typeof answer[0] === "number" && ((typeof a === "string" && typeof b === "number") || (typeof a === "number" && typeof b === "string") || (typeof a === "string" && typeof b === "string"))) {
-        if(typeof a === "string" && typeof b === "string"){
-            answer.push(`Warning: Type coercion occurred: "${a}" (string → number), "${b}" (string → number)`);
-        } else if (typeof a === "string") {
-            answer.push(`Warning: Type coercion occurred: "${a}" (string → number)`);
-        } else if (typeof b === "string") {
-            answer.push(`Warning: Type coercion occurred: "${b}" (string → number)`);
+
+    } else if (typeof answer[0] === "number" && (typeA !== typeB || (typeA === "string" && typeB === "string"))) {
+        if (typeA === "string" && typeB === "string") {
+            warnA = `"${a}" (string → number)`
+            warnB = `"${b}" (string → number)`
+        } else if (typeA === "string") {
+            warnA = `"${a}" (string → number)`
+        } else if (typeB === "string") {
+            warnB = `"${b}" (string → number)`
         }
-    } else if (typeof answer[0] === "string" && ((typeof a === "string" && typeof b === "number") || (typeof a === "number" && typeof b === "string"))) {
-        if (typeof a === "number") {
-            answer.push(`Warning: Type coercion occurred: ${a} (number → string)`);
-        } else if (typeof b === "number") {
-            answer.push(`Warning: Type coercion occurred: ${b} (number → string)`);
+        answer.push("");
+
+    } else if (typeof answer[0] === "string" && typeA !== typeB) {
+        if (typeA === "number") {
+            warnA = `"${a}" (number → string)`;
+        } else if (typeB === "number") {
+            warnB = `"${b}" (number → string)`;;
         }
+        answer.push("");
         answer.push(`Note: Implicit coercion resulted in string concatenation.`);
+    }
+
+    if (warnA && warnB) {
+        answer[1] = `${warning}${warnA} ,${warnB}`;
+    } else if (warnA || warnB) {
+        answer[1] = warning + warnA + warnB;
     }
 
     str = `Output: ${answer[0]}`;
@@ -44,8 +60,7 @@ function calculator(a, b, operation) {
         str += `\n${answer[2]}`;
     }
 
-    return str;
-
+    return str + '\n';
 }
 
 
@@ -64,8 +79,9 @@ console.log(calculator(5, "20", "divide"));
 // Warning: Type coercion occurred: "20" (string → number).
 
 console.log(calculator("30", 10, "add"));
-// Output: 40
-// Warning: Type coercion occurred: "30" (string → number).
+// Output: 3010
+// Warning: Type coercion occurred: 10 (number → string).
+// Note: Implicit coercion resulted in string concatenation.
 
 console.log(calculator(50, " is a number", "add"));
 // Output: "50 is a number"
